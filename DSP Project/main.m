@@ -47,17 +47,17 @@ close all;
 length(original_signal_noise_free)
 length(noise_signal)
 
-f_cutoff = 500;
+f_cutoff = [1500 4000];
 f_norm = f_cutoff / (fs1 / 2);
-[b,a] = butter(6, f_norm, 'low');
-filtered_signal = filter(b, a, original_signal_noise_free);
+[b,a] = butter(6, f_norm, 'bandpass');
+filtered_signal = filter(b, a, noise_signal);
 [f3,P3] = FreqRes(filtered_signal,fs1);
 
 
 [f1,P1] = FreqRes(original_signal_noise_free,fs1);
 [f2,P2] = FreqRes(noise_signal,fs2);
 
-% audiowrite('voice-noised-1.wav', x1, fs1);
+audiowrite('traffic-noise-filtered-1.wav', filtered_signal, fs1);
 
 figure(1);
 subplot(311);
