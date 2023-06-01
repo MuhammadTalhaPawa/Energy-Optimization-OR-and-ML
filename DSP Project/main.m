@@ -41,31 +41,68 @@ close all;
 % filename = 'your_wav_file.wav';
 % [y, fs] = audioread(filename);
 
-[original_signal_noise_free, fs1] = audioread('voice-noisefree.wav');
-[noise_signal, fs2] = audioread('traffic-noise-2-trunked.wav');
+% [original_signal_noise_free, fs1] = audioread('voice-noisefree-trunked-1.wav');
+% [noise_signal, fs2] = audioread('traffic-noise-2-trunked.wav');
+% 
+% length(original_signal_noise_free)
+% length(noise_signal)
+% 
+% % noised_voice = original_signal_noise_free + noise_signal;
+% 
+% f_cutoff = [1000 4000];
+% f_norm = f_cutoff / (fs1 / 2);
+% [b,a] = butter(6, f_norm, 'bandpass');
+% filtered_signal = filter(b, a, noise_signal);
+% [f3,P3] = FreqRes(filtered_signal,fs1);
+% 
+% 
+% [f1,P1] = FreqRes(original_signal_noise_free,fs1);
+% [f2,P2] = FreqRes(noise_signal,fs2);
+% 
+% audiowrite('traffic-noise-filtered-2.wav', noise_signal, fs1);
+% 
+% figure(1);
+% subplot(311);
+% plot(f1,P1);
+% subplot(312);
+% plot(f2,P2);
+% subplot(313);
+% plot(f3,P3);
 
-length(original_signal_noise_free)
-length(noise_signal)
 
-f_cutoff = [1500 4000];
+% [original_signal_noise_free, fs1] = audioread('voice-noisefree-trunked-1.wav');
+% [noise_signal, fs2] = audioread('traffic-noise-filtered-2.wav');
+% 
+% length(original_signal_noise_free)
+% length(noise_signal)
+% 
+% audiowrite('noised-voice-original-3.wav', original_signal_noise_free + noise_signal, fs1);
+
+
+
+[noised_signal, fs1] = audioread('noised-voiced-aun.wav');
+
+f_cutoff = 1000;
 f_norm = f_cutoff / (fs1 / 2);
-[b,a] = butter(6, f_norm, 'bandpass');
-filtered_signal = filter(b, a, noise_signal);
-[f3,P3] = FreqRes(filtered_signal,fs1);
+[b,a] = butter(6, f_norm, 'low');
+filtered_signal = filter(b, a, noised_signal);
+[f2,P2] = FreqRes(filtered_signal,fs1);
 
+amplified_signal = filtered_signal.*2;
 
-[f1,P1] = FreqRes(original_signal_noise_free,fs1);
-[f2,P2] = FreqRes(noise_signal,fs2);
-
-audiowrite('traffic-noise-filtered-1.wav', filtered_signal, fs1);
+[f1,P1] = FreqRes(noised_signal*2,fs1);
 
 figure(1);
-subplot(311);
+subplot(211);
 plot(f1,P1);
-subplot(312);
+subplot(212);
 plot(f2,P2);
-subplot(313);
-plot(f3,P3);
+
+audiowrite('filtered-signal-4.wav', amplified_signal, fs1);
+
+
+
+
 
 function [f,P1] = FreqRes(y,fs)
     % Compute the single-sided amplitude spectrum
