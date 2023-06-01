@@ -2,6 +2,8 @@ clc;
 clear all;
 close all;
 
+%% main naveed hoon
+
 % % Load the signal from a files
 % [original_signal, fs] = audioread('Noised_Voice_DSP.wav');
 
