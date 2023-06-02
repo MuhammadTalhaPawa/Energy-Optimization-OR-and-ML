@@ -41,13 +41,4 @@ audiowrite('filtered-signal-4.wav', amplified_signal, fs1);
 
 %% Function that returns the frequency response of a signal
 function [f,P1] = FreqRes(y,fs)
-    % Compute the single-sided amplitude spectrum
-    Y = fft(y);
-    L = length(y);
-    P2 = abs(Y/L);
-    P1 = P2(1:L/2+1);
-    P1(2:end-1) = 2*P1(2:end-1);
-    
-    % Define the frequency axis
-    f = fs*(0:(L/2))/L;
 end
