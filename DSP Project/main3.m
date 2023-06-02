@@ -8,8 +8,8 @@ filtered_signal = filter(b, a, noised_signal);
 
 amplified_signal = filtered_signal.*2;
 
-[f1,P1] = FreqRes(noised_signal*2,fs1);
-[f2,P2] = FreqRes(filtered_signal,fs1);
+[f1,P1] = FreqRes(noised_signal,fs1);
+[f2,P2] = FreqRes(amplified_signal,fs1);
 
 figure(1);
 subplot(211);
